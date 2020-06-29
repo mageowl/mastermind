@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+body {
+	margin: 0;
+	--pin-size: 6vh;
+	--code-pin-size: 1.3vh;
+	--border-width: calc(var(--pin-size) / 10);
+	user-select: none;
+}
+
+#game {
+	margin: auto;
+	width: max-content;
+	margin-top: 20px;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: Ubuntu, sans-serif;
+}
+
+#guess {
+	width: 95px;
+}
+
+#game span.msg {
+	display: block;
+	margin-top: 20px;
+}
+
+#pins {
+	position: absolute;
+	bottom: 10px;
+	left: calc(50vw - 45px - 3 * var(--pin-size));
+}
+
+#pins .pin {
+	cursor: grab;
+}
+
+.turn {
+	width: max-content;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.turn:not(:first-child) {
+	margin-top: 10px;
+}
+
+.pin {
+	width: var(--pin-size);
+	height: var(--pin-size);
+	margin-right: 15px;
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	background-color: darkgray;
+	text-align: center;
+}
+
+div.pin {
+	width: calc(var(--pin-size) - 20px);
+	height: calc(var(--pin-size) - 20px);
+	border: var(--border-width) solid black;
+}
+
+.code-pin {
+	width: var(--code-pin-size);
+	height: var(--code-pin-size);
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	border: var(--border-width) solid black;
+}
+
+.code-pin:not(:last-child) {
+	margin-right: 5px;
+}
+
+.pin.red {
+	background-color: red;
+}
+.pin.blue {
+	background-color: blue;
+	color: white;
+}
+.pin.green {
+	background-color: green;
+}
+.pin.yellow {
+	background-color: rgb(255, 196, 0);
+}
+.pin.purple {
+	background-color: purple;
+	color: white;
+}
+.pin.orange {
+	background-color: rgb(255, 136, 0);
+}
+
+.code-pin.red {
+	background-color: red;
+}
+.code-pin.white {
+	background-color: white;
+}
