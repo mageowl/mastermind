@@ -193,7 +193,7 @@ function guess() {
 			break;
 
 		case 1:
-			end("You won!", "red");
+			end("You won!", "green");
 			break;
 
 		case -1:
