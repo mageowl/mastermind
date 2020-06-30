@@ -214,6 +214,10 @@ function end(msg, color) {
 		codeEl.appendChild(pin);
 	}
 
+	let spanEl = document.createElement("span");
+	spanEl.innerHTML = "Final Code";
+	codeEl.appendChild(spanEl);
+
 	let msgEl = document.createElement("span");
 	msgEl.classList.add("msg");
 	msgEl.innerHTML = msg;
