@@ -104,3 +104,14 @@ div.pin {
 .code-pin.white {
 	background-color: white;
 }
+
+.help {
+	font-size: 2.5vh;
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	color: dodgerblue;
+	text-decoration: underline;
+	cursor: pointer;
+}
